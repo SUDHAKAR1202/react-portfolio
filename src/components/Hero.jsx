@@ -33,7 +33,15 @@ function useTypewriter(
     }
 
     return () => clearTimeout(timer);
-  }, [text, isDeleting, wordIndex]);
+  }, [
+    text,
+    isDeleting,
+    wordIndex,
+    words,
+    typingSpeed,
+    deletingSpeed,
+    delayBetween,
+  ]);
 
   return text;
 }
